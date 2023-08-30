@@ -1,0 +1,50 @@
+###
+GET http://belajarapi.medabot.online/Agung/Login/agung/123
+
+###
+GET http://belajarapi.medabot.online/Agung/AllUser
+
+###
+POST http://belajarapi.medabot.online/Agung/insertUser
+content-type: application/json
+
+{
+    "username" : "taufik",
+    "password" : "123",
+    "apikey" : "123"
+}
+
+###
+GET http://belajarapi.medabot.online/Agung/AllBuku
+
+###
+GET http://belajarapi.medabot.online/Agung/getBukuUser/agung
+
+###
+POST http://belajarapi.medabot.online/Agung/insertBuku
+content-type: application/json
+
+{
+    "judul" : "test insert",
+    "isbn" : "321",
+    "tahun" : "2022",
+    "penerbit" : "agung",
+    "jumlah" : "23",
+    "kategori" : "entah",
+    "createdby" : "agung"
+}
+
+###
+POST http://belajarapi.medabot.online/Agung/updateBuku
+content-type: application/json
+
+{
+    "judul" : "test insert",
+    "isbn" : "321",
+    "tahun" : "2020",
+    "penerbit" : "agung",
+    "jumlah" : "23",
+    "kategori" : "entah",
+    "createdby" : "agung",
+    "id" : "3"
+}
